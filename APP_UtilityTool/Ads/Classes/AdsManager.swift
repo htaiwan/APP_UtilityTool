@@ -10,6 +10,6 @@ import Foundation
 
 public class AdsManager {
     public static func say() {
-        print("Hello~~~AdsManager")
+        print("YOYO~~~AdsManager")
     }
 }
