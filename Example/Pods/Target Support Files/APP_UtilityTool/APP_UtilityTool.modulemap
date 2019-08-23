@@ -1,0 +1,6 @@
+framework module APP_UtilityTool {
+  umbrella header "APP_UtilityTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

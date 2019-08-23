@@ -1,0 +1,56 @@
+{
+  "name": "APP_UtilityTool",
+  "version": "0.1.0",
+  "summary": "iOS APP Utility Tool.",
+  "description": "This is an utility tool for developing iOS app.",
+  "homepage": "https://github.com/htaiwan/APP_UtilityTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Cheng, Chien-Tai": "htaiwan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/htaiwan/APP_UtilityTool.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "4.2",
+  "static_framework": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "subspecs": [
+    {
+      "name": "Ads",
+      "dependencies": {
+        "Google-Mobile-Ads-SDK": [
+
+        ]
+      },
+      "source_files": "APP_UtilityTool/Ads/Classes/**/*",
+      "resource_bundles": {
+        "Ads": "APP_UtilityTool/Ads/Assets/**/*"
+      }
+    },
+    {
+      "name": "Shortcut",
+      "source_files": "APP_UtilityTool/Shortcut/Classes/**/*",
+      "resource_bundles": {
+        "Shortcut": "APP_UtilityTool/Shortcut/Assets/**/*"
+      }
+    },
+    {
+      "name": "IAP",
+      "source_files": "APP_UtilityTool/IAP/Classes/**/*",
+      "resource_bundles": {
+        "IAP": "APP_UtilityTool/IAP/Assets/**/*"
+      }
+    }
+  ],
+  "swift_version": "4.2"
+}

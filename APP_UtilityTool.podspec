@@ -1,42 +1,44 @@
-#
-# Be sure to run `pod lib lint APP_UtilityTool.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'APP_UtilityTool'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of APP_UtilityTool.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'iOS APP Utility Tool.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is an utility tool for developing iOS app.
                        DESC
 
   s.homepage         = 'https://github.com/htaiwan/APP_UtilityTool'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'htaiwan' => 'htaiwan@oath.com' }
+  s.author           = { 'Cheng, Chien-Tai' => 'htaiwan@gmail.com' }
   s.source           = { :git => 'https://github.com/htaiwan/APP_UtilityTool.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '4.2'
+  s.static_framework = true
 
-  s.source_files = 'APP_UtilityTool/Classes/**/*'
+  #s.source_files = 'APP_UtilityTool/Classes/**/*'
   
   # s.resource_bundles = {
   #   'APP_UtilityTool' => ['APP_UtilityTool/Assets/*.png']
   # }
+  s.frameworks = 'UIKit', 'Foundation'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Ads' do |ss|
+    ss.dependency "Google-Mobile-Ads-SDK"
+    ss.source_files  = "APP_UtilityTool/Ads/Classes/**/*"
+    ss.resource_bundle = { "Ads" => "APP_UtilityTool/Ads/Assets/**/*" }
+  end
+
+  s.subspec 'Shortcut' do |ss|
+    ss.source_files  = "APP_UtilityTool/Shortcut/Classes/**/*"
+    ss.resource_bundle = { "Shortcut" => "APP_UtilityTool/Shortcut/Assets/**/*" }
+  end
+
+  s.subspec 'IAP' do |ss|
+    ss.source_files  = "APP_UtilityTool/IAP/Classes/**/*"
+    ss.resource_bundle = { "IAP" => "APP_UtilityTool/IAP/Assets/**/*" }
+  end
+
+
 end
