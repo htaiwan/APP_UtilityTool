@@ -13,7 +13,19 @@ class HTAdsDemoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        AdsManager.say()
+
+        // 加載上方廣告
+        AdsManager.shared.createAds(adsUnitID:"ca-app-pub-3521523989981143/5779592136", position: .Top, targetVC: self) { (error) in
+            if error == nil {
+                print("adViewDidReceiveAd success")
+            } else {
+                print("adView:didFailToReceiveAdWithError: \(error!.localizedDescription)")
+            }
+        }
+
     }
 
+    @IBAction func removeAds(_ sender: Any) {
+        AdsManager.shared.removeAds()
+    }
 }

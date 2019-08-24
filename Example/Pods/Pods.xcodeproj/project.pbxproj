@@ -34,7 +34,6 @@
 
 /* Begin PBXBuildFile section */
 		05A11277B0EE9049783A451B4D9BB115 /* GULNetworkMessageCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 38397B90197A9B1DEDC1C1A0391DB202 /* GULNetworkMessageCode.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		150457CEC7DCAFF02CF322C9AD84CD44 /* AdsViewViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = C12EB82C29C90AFFE579565AB21DC389 /* AdsViewViewController.swift */; };
 		1AB0049453F5BC604334A51F5D7A8D95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CCB64591E5193571220AB99A29E8AD /* Foundation.framework */; };
 		2A739758BC70D58D0C1C9F5E2710ABF5 /* GULNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 381CCD34AFF14FD83120A47D33AA64E3 /* GULNSData+zlib.m */; };
 		2AC8192C9F0E6457B10D2D3A20B0B515 /* GULAppDelegateSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1628BAAB1DE80CA8510028F00E5E40AB /* GULAppDelegateSwizzler.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -50,7 +49,6 @@
 		47FFFACD9C6076A9065A7690AD3CF328 /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = C90D7627CF7A64A302ADBE99676205F4 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AB42C3D50B70112C397625075ACE422 /* GULReachabilityChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = C4572FF9C74BF176CAB13F8804411204 /* GULReachabilityChecker.m */; };
 		4F14C8F4E9BA8CECE96040C2CBFD1A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CCB64591E5193571220AB99A29E8AD /* Foundation.framework */; };
-		57F46F6DF06698CBED910C7610CCFB7C /* AdsViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A86BCA2E75FC2A9B45B7DA7CC6FBB9 /* AdsViewViewController.xib */; };
 		5932762167F5BEBE8C557986EBA93690 /* GoogleUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A256C48EB15535C43AF8E31E28772675 /* GoogleUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ADB79AAA869005599A8DD28CB5D46A1 /* GULNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C073BA941DBD2FA9DD574D0FD188DC5 /* GULNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F3F5015061381D43D2EFDE6830C6FEA /* GULSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BD81625486AF7FB6928B8111C1EC2 /* GULSwizzler.m */; };
@@ -225,7 +223,6 @@
 		B2A2242DFEFC3B4A60F2844839884E7E /* GULApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULApplication.h; path = GoogleUtilities/AppDelegateSwizzler/Private/GULApplication.h; sourceTree = "<group>"; };
 		B43874C6CBB50E7134FBEC24BABFE14F /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAC5B192376D440DB8CC6F0B5CDF410 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
-		C12EB82C29C90AFFE579565AB21DC389 /* AdsViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdsViewViewController.swift; path = APP_UtilityTool/Ads/Assets/AdsViewViewController.swift; sourceTree = "<group>"; };
 		C32BD2155A511E875A5204881F415F9D /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
 		C4572FF9C74BF176CAB13F8804411204 /* GULReachabilityChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULReachabilityChecker.m; path = GoogleUtilities/Reachability/GULReachabilityChecker.m; sourceTree = "<group>"; };
 		C5C13D31C6650492EEF68178FCB47270 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nanopb.modulemap; sourceTree = "<group>"; };
@@ -241,7 +238,6 @@
 		DB5DD420E2B2A530AF86934F17FB153C /* APP_UtilityTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APP_UtilityTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E811908D02FF642D4419476A3F2A6767 /* GULAppEnvironmentUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULAppEnvironmentUtil.m; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.m; sourceTree = "<group>"; };
 		F00E2F95FA9D17B74AE74A4F4B2556B5 /* GoogleUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.xcconfig; sourceTree = "<group>"; };
-		F0A86BCA2E75FC2A9B45B7DA7CC6FBB9 /* AdsViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AdsViewViewController.xib; path = APP_UtilityTool/Ads/Assets/AdsViewViewController.xib; sourceTree = "<group>"; };
 		FAA7B8DDC6809482DE67C2CFABA82D7A /* GULNetworkURLSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkURLSession.h; path = GoogleUtilities/Network/Private/GULNetworkURLSession.h; sourceTree = "<group>"; };
 		FDFD997A4AE4E2D46AA68F81BD8E848A /* Google-Mobile-Ads-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.xcconfig"; sourceTree = "<group>"; };
 		FE65C83C4EC89196703BE9E286129AFA /* Pods-APP_UtilityTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APP_UtilityTool_Example-dummy.m"; sourceTree = "<group>"; };
@@ -369,8 +365,6 @@
 		43E9A4F8192C81E8CBBE935AFB8ED4C5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C12EB82C29C90AFFE579565AB21DC389 /* AdsViewViewController.swift */,
-				F0A86BCA2E75FC2A9B45B7DA7CC6FBB9 /* AdsViewViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -844,8 +838,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150457CEC7DCAFF02CF322C9AD84CD44 /* AdsViewViewController.swift in Resources */,
-				57F46F6DF06698CBED910C7610CCFB7C /* AdsViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

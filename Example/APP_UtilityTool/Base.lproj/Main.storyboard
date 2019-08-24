@@ -51,13 +51,30 @@
                     <view key="view" contentMode="scaleToFill" id="gRo-gK-8qr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pm7-Ek-SI7">
+                                <rect key="frame" x="168" y="406.5" width="78" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="2gQ-OI-rpi"/>
+                                    <constraint firstAttribute="height" constant="83" id="9bD-no-P6S"/>
+                                </constraints>
+                                <state key="normal" title="remove"/>
+                                <connections>
+                                    <action selector="removeAds:" destination="tKn-jj-rtH" eventType="touchUpInside" id="nE2-4w-UYy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pm7-Ek-SI7" firstAttribute="centerX" secondItem="gRo-gK-8qr" secondAttribute="centerX" id="4gH-Lc-fx8"/>
+                            <constraint firstItem="Pm7-Ek-SI7" firstAttribute="centerY" secondItem="gRo-gK-8qr" secondAttribute="centerY" id="BUu-8K-9Hn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xvH-9G-0CX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmZ-57-OId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="184"/>
+            <point key="canvasLocation" x="1892.753623188406" y="183.48214285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hM0-Gm-NHq">

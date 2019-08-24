@@ -17,17 +17,11 @@ This is an utility tool for developing iOS app.
   s.swift_version = '4.2'
   s.static_framework = true
 
-  #s.source_files = 'APP_UtilityTool/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'APP_UtilityTool' => ['APP_UtilityTool/Assets/*.png']
-  # }
   s.frameworks = 'UIKit', 'Foundation'
 
   s.subspec 'Ads' do |ss|
     ss.dependency "Google-Mobile-Ads-SDK"
     ss.source_files  = "APP_UtilityTool/Ads/Classes/**/*"
-    ss.resource_bundle = { "Ads" => "APP_UtilityTool/Ads/Assets/**/*" }
   end
 
   s.subspec 'Shortcut' do |ss|
