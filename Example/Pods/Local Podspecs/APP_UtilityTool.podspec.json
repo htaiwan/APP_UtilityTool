@@ -32,10 +32,7 @@
 
         ]
       },
-      "source_files": "APP_UtilityTool/Ads/Classes/**/*",
-      "resource_bundles": {
-        "Ads": "APP_UtilityTool/Ads/Assets/**/*"
-      }
+      "source_files": "APP_UtilityTool/Ads/Classes/**/*"
     },
     {
       "name": "Shortcut",
@@ -46,6 +43,7 @@
     },
     {
       "name": "IAP",
+      "frameworks": "StoreKit",
       "source_files": "APP_UtilityTool/IAP/Classes/**/*",
       "resource_bundles": {
         "IAP": "APP_UtilityTool/IAP/Assets/**/*"

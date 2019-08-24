@@ -51,6 +51,8 @@ class HTDemoTableViewController: UITableViewController {
         switch demo {
         case .Ads:
             identifier = "HTAdsDemoViewController"
+        case .IAP:
+            identifier = "HTIAPDemoViewController"
         default:
             return
         }

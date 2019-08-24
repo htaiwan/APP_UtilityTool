@@ -30,8 +30,8 @@ This is an utility tool for developing iOS app.
   end
 
   s.subspec 'IAP' do |ss|
+    ss.frameworks = 'StoreKit'
     ss.source_files  = "APP_UtilityTool/IAP/Classes/**/*"
-    ss.resource_bundle = { "IAP" => "APP_UtilityTool/IAP/Assets/**/*" }
   end
 
 

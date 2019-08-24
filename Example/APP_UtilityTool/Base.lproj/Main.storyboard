@@ -33,7 +33,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Demo" id="rkR-TS-eaT"/>
                     <connections>
-                        <segue destination="tKn-jj-rtH" kind="presentation" identifier="DemoSegue" id="8x7-ST-D2l"/>
+                        <segue destination="tKn-jj-rtH" kind="show" identifier="DemoAdsSegue" id="8x7-ST-D2l"/>
+                        <segue destination="dyD-s4-HUY" kind="show" identifier="DemoIAPSegue" id="9CW-fI-Era"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2h-II-kBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,6 +76,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmZ-57-OId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1892.753623188406" y="183.48214285714286"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="gLt-J6-Wr6">
+            <objects>
+                <viewController storyboardIdentifier="HTIAPDemoViewController" id="dyD-s4-HUY" customClass="HTIAPDemoViewController" customModule="APP_UtilityTool_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QFT-37-YXE"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Yp-Oz-XQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f3h-zB-P67">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24F-Fi-9kP">
+                                <rect key="frame" x="161.5" y="409" width="91" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="27u-nY-zgL"/>
+                                    <constraint firstAttribute="height" constant="78" id="jdC-WQ-3pg"/>
+                                </constraints>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="buy:" destination="dyD-s4-HUY" eventType="touchUpInside" id="cQp-aK-E7b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="24F-Fi-9kP" firstAttribute="centerY" secondItem="f3h-zB-P67" secondAttribute="centerY" id="ON8-ks-a4r"/>
+                            <constraint firstItem="24F-Fi-9kP" firstAttribute="centerX" secondItem="f3h-zB-P67" secondAttribute="centerX" id="sBk-Fe-bTg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFy-Y3-tvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="864.50892857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hM0-Gm-NHq">

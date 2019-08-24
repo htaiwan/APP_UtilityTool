@@ -9,10 +9,11 @@
 import Foundation
 import GoogleMobileAds
 
+public typealias CompletionHandler = ((_ error: GADRequestError?) -> Void)
+
 public class AdsManager: NSObject {
 
-    public typealias Completion = ((GADRequestError?) -> ())
-    private var completion: Completion?
+    private var completion: CompletionHandler?
     private var bannerView: GADBannerView?
 
     public enum AdsPosition {
@@ -28,7 +29,7 @@ public class AdsManager: NSObject {
         self.createAds(adsUnitID: adsUnitID, position: position, targetVC: targetVC, completion: nil)
     }
 
-    public func createAds(adsUnitID: String, position: AdsPosition, targetVC: UIViewController, completion: Completion?){
+    public func createAds(adsUnitID: String, position: AdsPosition, targetVC: UIViewController, completion: CompletionHandler?){
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         bannerView!.adUnitID = adsUnitID
         bannerView!.rootViewController = targetVC

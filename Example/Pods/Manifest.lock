@@ -1,6 +1,7 @@
 PODS:
   - APP_UtilityTool/Ads (0.1.0):
     - Google-Mobile-Ads-SDK
+  - APP_UtilityTool/IAP (0.1.0)
   - Google-Mobile-Ads-SDK (7.49.0):
     - GoogleAppMeasurement (~> 6.0)
   - GoogleAppMeasurement (6.1.1):
@@ -33,6 +34,7 @@ PODS:
 
 DEPENDENCIES:
   - APP_UtilityTool/Ads (from `../`)
+  - APP_UtilityTool/IAP (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,12 +48,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  APP_UtilityTool: c5a0ff98262dfbc5e6ee1d8a31d742be139950ec
+  APP_UtilityTool: 97357daa799d9327c94e1459874801cfec8efe38
   Google-Mobile-Ads-SDK: df315e371b29cf935f7ea872e7bdec39462a100e
   GoogleAppMeasurement: 86a82f0e1f20b8eedf8e20326530138fd71409de
   GoogleUtilities: e7dc37039b19df7fe543479d3e4a02ac8d11bb69
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: e6a84e2d7fe3e4a33c09b4278d77e41b7d57adee
+PODFILE CHECKSUM: f82dc73aec4357a1bf26925e620d1ddea1e80469
 
 COCOAPODS: 1.7.5
