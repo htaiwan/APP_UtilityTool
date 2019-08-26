@@ -46,6 +46,23 @@
       "name": "IAP",
       "frameworks": "StoreKit",
       "source_files": "APP_UtilityTool/IAP/Classes/**/*"
+    },
+    {
+      "name": "Tracking",
+      "dependencies": {
+        "Firebase/Analytics": [
+
+        ]
+      },
+      "source_files": "APP_UtilityTool/Tracking/Classes/**/*"
+    },
+    {
+      "name": "Map",
+      "frameworks": [
+        "CoreLocation",
+        "MapKit"
+      ],
+      "source_files": "APP_UtilityTool/Map/Classes/**/*"
     }
   ],
   "swift_version": "4.2"

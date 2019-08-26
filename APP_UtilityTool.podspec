@@ -36,5 +36,15 @@ This is an utility tool for developing iOS app.
     ss.source_files  = "APP_UtilityTool/IAP/Classes/**/*"
   end
 
+  s.subspec 'Tracking' do |ss|
+      ss.dependency "Firebase/Analytics"
+      ss.source_files  = "APP_UtilityTool/Tracking/Classes/**/*"
+  end
+
+  s.subspec 'Map' do |ss|
+      ss.frameworks = 'CoreLocation', 'MapKit'
+      ss.source_files  = "APP_UtilityTool/Map/Classes/**/*"
+  end
+
 
 end

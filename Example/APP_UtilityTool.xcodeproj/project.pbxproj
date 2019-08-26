@@ -13,6 +13,8 @@
 		435BFFDA23120654003C1E87 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 435BFFD923120654003C1E87 /* Intents.intentdefinition */; };
 		435BFFE323135FDC003C1E87 /* ShortcutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFFE123135FDC003C1E87 /* ShortcutTableViewCell.swift */; };
 		435BFFE423135FDC003C1E87 /* ShortcutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435BFFE223135FDC003C1E87 /* ShortcutTableViewCell.xib */; };
+		435BFFE82313691C003C1E87 /* HTTrackingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFFE72313691C003C1E87 /* HTTrackingDemoViewController.swift */; };
+		435BFFEA23136936003C1E87 /* HTMapDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFFE923136936003C1E87 /* HTMapDemoViewController.swift */; };
 		4390C35E2310A6A70069250A /* HTDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390C35D2310A6A70069250A /* HTDemoTableViewController.swift */; };
 		4390C3602310AD910069250A /* HTAdsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390C35F2310AD910069250A /* HTAdsDemoViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -33,6 +35,8 @@
 		435BFFD923120654003C1E87 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		435BFFE123135FDC003C1E87 /* ShortcutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutTableViewCell.swift; sourceTree = "<group>"; };
 		435BFFE223135FDC003C1E87 /* ShortcutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutTableViewCell.xib; sourceTree = "<group>"; };
+		435BFFE72313691C003C1E87 /* HTTrackingDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTrackingDemoViewController.swift; sourceTree = "<group>"; };
+		435BFFE923136936003C1E87 /* HTMapDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMapDemoViewController.swift; sourceTree = "<group>"; };
 		4390C35D2310A6A70069250A /* HTDemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTDemoTableViewController.swift; sourceTree = "<group>"; };
 		4390C35F2310AD910069250A /* HTAdsDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTAdsDemoViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* APP_UtilityTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP_UtilityTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,22 @@
 			path = Shortcuts;
 			sourceTree = "<group>";
 		};
+		435BFFE5231368C0003C1E87 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				435BFFE72313691C003C1E87 /* HTTrackingDemoViewController.swift */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		435BFFE6231368F5003C1E87 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				435BFFE923136936003C1E87 /* HTMapDemoViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +144,8 @@
 				435BFFCE2311FFBF003C1E87 /* Ads */,
 				435BFFCF2311FFCA003C1E87 /* IAP */,
 				435BFFD623120504003C1E87 /* Shortcuts */,
+				435BFFE5231368C0003C1E87 /* Tracking */,
+				435BFFE6231368F5003C1E87 /* Map */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -285,7 +307,9 @@
 			files = (
 				435BFFDA23120654003C1E87 /* Intents.intentdefinition in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				435BFFE82313691C003C1E87 /* HTTrackingDemoViewController.swift in Sources */,
 				4390C3602310AD910069250A /* HTAdsDemoViewController.swift in Sources */,
+				435BFFEA23136936003C1E87 /* HTMapDemoViewController.swift in Sources */,
 				435BFFD12312001F003C1E87 /* HTIAPDemoProducts.swift in Sources */,
 				435BFFCC2311FD05003C1E87 /* HTIAPDemoViewController.swift in Sources */,
 				435BFFE323135FDC003C1E87 /* ShortcutTableViewCell.swift in Sources */,

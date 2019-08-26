@@ -55,8 +55,10 @@ class HTDemoTableViewController: UITableViewController {
             identifier = "HTIAPDemoViewController"
         case .Shortcut:
             identifier = "HTShortcutDemoViewController"
-        default:
-            return
+        case .Tracking:
+            identifier = "HTTrackingDemoViewController"
+        case .Map:
+            identifier = "HTMapDemoViewController"
         }
 
         let vc = storyboard.instantiateViewController(withIdentifier: identifier)
