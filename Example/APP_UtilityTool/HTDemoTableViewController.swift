@@ -53,6 +53,8 @@ class HTDemoTableViewController: UITableViewController {
             identifier = "HTAdsDemoViewController"
         case .IAP:
             identifier = "HTIAPDemoViewController"
+        case .Shortcut:
+            identifier = "HTShortcutDemoViewController"
         default:
             return
         }

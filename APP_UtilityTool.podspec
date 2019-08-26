@@ -19,14 +19,16 @@ This is an utility tool for developing iOS app.
 
   s.frameworks = 'UIKit', 'Foundation'
 
+  #ss.resource_bundle = { "Shortcut" => "APP_UtilityTool/Shortcut/Assets/**/*" }
+
   s.subspec 'Ads' do |ss|
     ss.dependency "Google-Mobile-Ads-SDK"
     ss.source_files  = "APP_UtilityTool/Ads/Classes/**/*"
   end
 
   s.subspec 'Shortcut' do |ss|
+    ss.frameworks = 'Intents', 'IntentsUI'
     ss.source_files  = "APP_UtilityTool/Shortcut/Classes/**/*"
-    ss.resource_bundle = { "Shortcut" => "APP_UtilityTool/Shortcut/Assets/**/*" }
   end
 
   s.subspec 'IAP' do |ss|

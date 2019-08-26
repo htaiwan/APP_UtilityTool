@@ -36,18 +36,16 @@
     },
     {
       "name": "Shortcut",
-      "source_files": "APP_UtilityTool/Shortcut/Classes/**/*",
-      "resource_bundles": {
-        "Shortcut": "APP_UtilityTool/Shortcut/Assets/**/*"
-      }
+      "frameworks": [
+        "Intents",
+        "IntentsUI"
+      ],
+      "source_files": "APP_UtilityTool/Shortcut/Classes/**/*"
     },
     {
       "name": "IAP",
       "frameworks": "StoreKit",
-      "source_files": "APP_UtilityTool/IAP/Classes/**/*",
-      "resource_bundles": {
-        "IAP": "APP_UtilityTool/IAP/Assets/**/*"
-      }
+      "source_files": "APP_UtilityTool/IAP/Classes/**/*"
     }
   ],
   "swift_version": "4.2"

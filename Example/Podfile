@@ -4,5 +4,6 @@ target 'APP_UtilityTool_Example' do
 
   pod 'APP_UtilityTool/Ads', :path => '../'
   pod 'APP_UtilityTool/IAP', :path => '../'
+  pod 'APP_UtilityTool/Shortcut', :path => '../'
 
 end
